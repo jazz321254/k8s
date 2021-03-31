@@ -55,8 +55,8 @@ Vagrant.configure("2") do |config|
     git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
     bash ~/.bash_it/install.sh -s
   
-	curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel LTS
-	echo 'export PATH="$PATH:$HOME/.dotnet"' >> ~/.bashrc
+    curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel LTS
+    echo 'export PATH="$PATH:$HOME/.dotnet"' >> ~/.bashrc
   SHELL
 
   config.vm.network :private_network, ip: "172.17.8.111"
